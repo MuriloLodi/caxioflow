@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dreelio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Dreelio">
+        <span class="brand-dot"></span>
+        <span class="brand-name">Dreelio</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="#pricing">Try Dreelio free</a>
+      </div>
+
+      <button class="nav-burger" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav-mobile" hidden>
+      <a href="#features">Features</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-dark" href="#pricing">Try Dreelio free</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-cloud hero-cloud-left" aria-hidden="true"></div>
+    <div class="hero-cloud hero-cloud-right" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy reveal">
+        <h1 class="hero-title">Run your freelance<br/>business like a pro</h1>
+        <p class="hero-sub">
+          A tool made for modern freelancers, small projects, and agencies that need
+          a clean, pro system to run work, get paid, and stay on track.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="#pricing">Try Dreelio free</a>
+          <a class="btn btn-ghost" href="#features">See features</a>
+        </div>
+      </div>
+
+      <div class="hero-preview reveal" data-parallax="1">
+        <div class="preview-shell">
+          <img
+            src="https://framerusercontent.com/images/JeI7uULydlOTVUTSXL8kgPtn4.png?width=2832&height=1656"
+            alt="Dreelio dashboard preview"
+            loading="eager"
+          />
+        </div>
+      </div>
+
+      <div class="trust-row reveal">
+        <div class="trust-caption">Trusted by 7,000+ top startups, freelancers and studios</div>
+        <div class="trust-logos" aria-label="Customer logos">
+          <span>Automation</span>
+          <span>SAVANNAH</span>
+          <span>FURNISH</span>
+          <span>Unmove</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVICE SECTION -->
+  <section class="section section-soft" id="benefits">
+    <div class="container">
+      <div class="section-head centered reveal">
+        <div class="eyebrow">SEAMLESS ACROSS DEVICES</div>
+        <h2 class="h2">Work from anywhere,<br/>stay in sync</h2>
+      </div>
+
+      <div class="device-card reveal" data-parallax="0.5">
+        <div class="device-media">
+          <img
+            class="device-img is-active"
+            data-device="mobile"
+            src="https://framerusercontent.com/images/W508S15xhhw0Gkno25oxm1F4Q.png?width=920&height=776"
+            alt="Mobile app preview"
+            loading="lazy"
+          />
+          <img
+            class="device-img"
+            data-device="web"
+            src="https://framerusercontent.com/images/pfcMvn2ZHHeXQ5LknPj2NNf2SQ.png?width=920&height=778"
+            alt="Web app preview"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="segmented device-switch" role="tablist" aria-label="Device switch">
+          <button class="seg-btn is-active" type="button" data-device-btn="mobile" role="tab" aria-selected="true">
+            Mobile App
+          </button>
+          <button class="seg-btn" type="button" data-device-btn="web" role="tab" aria-selected="false">
+            Web App
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE 1 -->
+  <section class="section">
+    <div class="container">
+      <div class="feature-grid">
+        <div class="feature-media reveal" data-parallax="0.6">
+          <div class="media-shell media-shell-blue">
+            <img
+              src="https://framerusercontent.com/images/gUEFVWinyzqAJ4r7gBTv97dNy8.png?width=1200&height=888"
+              alt="Projects view"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div class="feature-copy reveal">
+          <div class="eyebrow">PROJECT MANAGEMENT</div>
+          <h3 class="h3">Keep every project moving forward</h3>
+          <p class="p">
+            Organize deliverables, track progress, and keep your clients aligned. Everything stays
+            clean and visible, so nothing slips.
+          </p>
+
+          <div class="pill-row">
+            <span class="pill">Tasks</span>
+            <span class="pill">Time tracking</span>
+            <span class="pill">Timesheets</span>
+            <span class="pill">Reports</span>
+          </div>
+
+          <a class="btn btn-dark btn-sm" href="#pricing">Try Dreelio free</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE 2 -->
+  <section class="section section-warm">
+    <div class="container">
+      <div class="feature-grid reverse">
+        <div class="feature-copy reveal">
+          <div class="eyebrow">FINANCIAL MANAGEMENT</div>
+          <h3 class="h3">Track income,<br/>get paid, stress less</h3>
+          <p class="p">
+            Send invoices, manage budgets, and stay ahead with simple forecasting. Built for
+            freelancers who want control without complexity.
+          </p>
+
+          <div class="pill-row">
+            <span class="pill">Invoicing</span>
+            <span class="pill">Budgets</span>
+            <span class="pill">Forecasting</span>
+            <span class="pill">Integrations</span>
+          </div>
+
+          <a class="btn btn-dark btn-sm" href="#pricing">Try Dreelio free</a>
+        </div>
+
+        <div class="feature-media reveal" data-parallax="0.6">
+          <div class="media-shell media-shell-ice">
+            <img
+              src="https://framerusercontent.com/images/thBhwy66kPqQ7HBg4Q1OWQyQVI.png?width=1200&height=888"
+              alt="Project budget dashboard"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-features reveal">
+        <div class="mini">
+          <div class="mini-title">Collaborate in realtime</div>
+          <div class="mini-text">Keep every conversation in sync — comments, messages, and project chats.</div>
+        </div>
+        <div class="mini">
+          <div class="mini-title">Speaks your language</div>
+          <div class="mini-text">Set language, currency, time, and date preferences for a local feel.</div>
+        </div>
+        <div class="mini">
+          <div class="mini-title">View things your way</div>
+          <div class="mini-text">Toggle between Kanban, cards, list, table, timeline, and calendar views.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUILT FOR... -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head centered reveal">
+        <div class="eyebrow">FEATURES</div>
+        <h2 class="h2">Built for freelancers,<br/>powered by simplicity</h2>
+      </div>
+
+      <div class="cards-2 reveal">
+        <article class="card feature-card">
+          <div class="card-head">
+            <h4 class="card-title">Smart, flexible, and built around your business workflow</h4>
+            <p class="card-text">
+              Personalize every detail — from branding and interface layout to colors and menus,
+              so Dreelio feels like an extension of your brand.
+            </p>
+          </div>
+
+          <!-- visual (replica do “customization” sem depender do SVG do Framer) -->
+          <div class="custom-ui">
+            <div class="custom-top">
+              <div class="dots">
+                <span style="--c:#8b5cf6"></span>
+                <span style="--c:#22c55e"></span>
+                <span style="--c:#f59e0b"></span>
+                <span style="--c:#0ea5e9"></span>
+                <span style="--c:#111827"></span>
+              </div>
+              <div class="chip">
+                <span class="chip-dot"></span> 10 freelo points
+              </div>
+            </div>
+
+            <div class="custom-row">
+              <div class="select">
+                <span>Template</span>
+                <strong>Default</strong>
+              </div>
+              <div class="toggle">
+                <span>Dark</span>
+                <span class="toggle-ui" aria-hidden="true"></span>
+              </div>
+            </div>
+
+            <div class="custom-bottom">
+              <div class="bar"></div>
+              <div class="bar short"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card feature-card">
+          <div class="card-head">
+            <h4 class="card-title">Integrates seamlessly with the tools you already use</h4>
+            <p class="card-text">
+              Seamless integrations. Plug Dreelio into the tools you love. Set up automations,
+              sync your data, and make your systems work smarter together.
+            </p>
+          </div>
+
+          <div class="integrations-grid" aria-label="Integrations">
+            <div class="int">Asana</div>
+            <div class="int">Linear</div>
+            <div class="int">Mailchimp</div>
+            <div class="int">Confluence</div>
+            <div class="int">Zapier</div>
+            <div class="int">Slack</div>
+            <div class="int">Loom</div>
+            <div class="int">Google Meet</div>
+            <div class="int">Spectrum</div>
+          </div>
+        </article>
+      </div>
+
+      <!-- TESTIMONIALS -->
+      <section class="section section-tight">
+        <div class="quote-block centered reveal">
+          <div class="quote-stars" aria-hidden="true">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+
+          <h3 class="quote">"Dreelio is by far the best<br/>agency tool I have ever used"</h3>
+
+          <div class="quote-person">
+            <img
+              class="avatar"
+              src="https://framerusercontent.com/images/S9L8waY8YP57BRTqPA5VaqJ7c.jpg?width=300&height=300"
+              alt="Martha Punla"
+              loading="lazy"
+            />
+            <div>
+              <div class="name">Martha Punla</div>
+              <div class="role">VP Marketing, Meta</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials reveal">
+          <article class="t-card">
+            <p class="t-text">
+              "As a fast-moving design team, we needed a tool that matched our pace. From client onboarding
+              to getting paid, this just works clean, fast, and beautifully built."
+            </p>
+            <div class="t-footer">
+              <img class="avatar" src="https://framerusercontent.com/images/Et6DumDmh2RQ0iDyCSQ6tfsZ8.jpg?width=200&height=200" alt="Leah Daniel" loading="lazy" />
+              <div>
+                <div class="name">Leah Daniel</div>
+                <div class="role">Design Ops Lead, teamwork.</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="t-card">
+            <p class="t-text">
+              "We used to duct-tape tools together. Now our contracts, time tracking, and payments live in one clean system.
+              It's everything a small team needs to stay pro."
+            </p>
+            <div class="t-footer">
+              <img class="avatar" src="https://framerusercontent.com/images/UQ3VAeUsm7aRhKUqekI3Sx8YmY.jpg?width=200&height=200" alt="Jane Jay Jay" loading="lazy" />
+              <div>
+                <div class="name">Jane Jay Jay</div>
+                <div class="role">Project Manager, Google</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="t-card">
+            <p class="t-text">
+              "Managing projects used to mean spreadsheets, DMs, and missed invoices. This platform keeps our workflows tight
+              and our clients impressed."
+            </p>
+            <div class="t-footer">
+              <img class="avatar" src="https://framerusercontent.com/images/r6zjSUgLQkP33zYAqzN6hO1MW6g.jpg?width=200&height=200" alt="Amos Chen" loading="lazy" />
+              <div>
+                <div class="name">Amos Chen</div>
+                <div class="role">Art Director, Pentagram</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section section-ice" id="pricing">
+    <div class="container">
+      <div class="section-head centered reveal">
+        <div class="eyebrow">PRICING</div>
+        <h2 class="h2">Simple plans<br/>for serious work</h2>
+      </div>
+
+      <div class="pricing-toggle reveal" role="tablist" aria-label="Billing">
+        <button class="seg-btn is-active" type="button" data-billing="monthly" aria-selected="true">Monthly</button>
+        <button class="seg-btn" type="button" data-billing="annually" aria-selected="false">Annually</button>
+      </div>
+
+      <div class="pricing-grid reveal">
+        <article class="price-card">
+          <div class="price-top">
+            <div class="plan">Basic</div>
+            <div class="price">$0<span>/mo</span></div>
+            <div class="desc">For solo use with light needs.</div>
+          </div>
+          <ul class="features">
+            <li>Unlimited projects</li>
+            <li>Unlimited clients</li>
+            <li>Time tracking</li>
+            <li>CRM</li>
+            <li>iOS &amp; Android app</li>
+          </ul>
+          <a class="btn btn-ghost" href="#contact">Try Dreelio free</a>
+        </article>
+
+        <article class="price-card is-featured">
+          <div class="badge-save">Save 20%</div>
+          <div class="price-top">
+            <div class="plan">Premium</div>
+
+            <div class="price">
+              <span class="price-monthly">$189</span>
+              <span class="price-annually" hidden>$87</span>
+              <span>/mo</span>
+            </div>
+
+            <div class="desc">Best for freelancers with multiple clients.</div>
+          </div>
+          <ul class="features">
+            <li>All Basic features</li>
+            <li>Invoicing &amp; estimates</li>
+            <li>Budgets &amp; forecasts</li>
+            <li>Client portals</li>
+            <li>Advanced reporting</li>
+          </ul>
+          <a class="btn btn-dark" href="#contact">Try Dreelio free</a>
+        </article>
+
+        <article class="price-card">
+          <div class="price-top">
+            <div class="plan">Enterprise</div>
+            <div class="price">Flexible</div>
+            <div class="desc">For studios and teams who need support.</div>
+          </div>
+          <ul class="features">
+            <li>Custom data import</li>
+            <li>Advanced onboarding</li>
+            <li>Hubspot integration</li>
+            <li>Timesheets</li>
+            <li>Priority support</li>
+          </ul>
+          <a class="btn btn-ghost" href="#contact">Contact sales</a>
+        </article>
+      </div>
+
+      <div class="trust-row small reveal">
+        <div class="trust-caption">Trusted by 7,000+ top startups, freelancers and studios</div>
+        <div class="trust-logos">
+          <span>Automation</span>
+          <span>SAVANNAH</span>
+          <span>FURNISH</span>
+          <span>Unmove</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="section" id="blog">
+    <div class="container">
+      <div class="section-head centered reveal">
+        <div class="eyebrow">BLOG</div>
+        <h2 class="h2">Ideas to level-up<br/>your freelance game</h2>
+      </div>
+
+      <!-- Featured post -->
+      <article class="blog-feature reveal">
+        <div class="blog-img blog-img-feature" aria-hidden="true"></div>
+        <div class="blog-content">
+          <div class="blog-tag">Must Read</div>
+          <h3 class="blog-title">How to start a 100k creative agency in 2025</h3>
+          <p class="blog-desc">
+            Learn how to position, sell, and deliver a service business that scales with clarity.
+          </p>
+          <div class="blog-meta">
+            <span class="pill small">Design & Biz</span>
+            <span class="dot">•</span>
+            <span>12 min read</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="blog-grid reveal">
+        <article class="blog-card">
+          <div class="blog-img blog-img-1" aria-hidden="true"></div>
+          <div class="blog-card-body">
+            <h4>The 5 tools every freelancer needs</h4>
+            <div class="blog-meta"><span class="pill small">Tooling</span><span class="pill small green">New</span></div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img blog-img-2" aria-hidden="true"></div>
+          <div class="blog-card-body">
+            <h4>A complete guide to project success</h4>
+            <div class="blog-meta"><span class="pill small">Process</span><span class="pill small blue">Updated</span></div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img blog-img-3" aria-hidden="true"></div>
+          <div class="blog-card-body">
+            <h4>When to hire your first contractor</h4>
+            <div class="blog-meta"><span class="pill small">Growth</span><span class="pill small orange">Popular</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section class="section section-sky" id="contact">
+    <div class="sky-cloud sky-cloud-left" aria-hidden="true"></div>
+    <div class="sky-cloud sky-cloud-right" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="section-head centered reveal">
+        <div class="eyebrow">COMMUNITY</div>
+        <h2 class="h2">Stay in the loop</h2>
+      </div>
+
+      <div class="social-grid reveal">
+        <a class="social-card" href="#" aria-label="X / Twitter">
+          <div class="social-top">
+            <div class="social-ic">X</div>
+            <div class="social-count">12,000+ followers</div>
+          </div>
+          <div class="social-title">X/Twitter</div>
+          <div class="social-desc">Tips, updates &amp; behind-the-scenes. Stay connected as Dreelio grows.</div>
+          <div class="social-link">JOIN →</div>
+        </a>
+
+        <a class="social-card" href="#" aria-label="YouTube">
+          <div class="social-top">
+            <div class="social-ic yt">▶</div>
+            <div class="social-count">1.5k subscribers</div>
+          </div>
+          <div class="social-title">YouTube</div>
+          <div class="social-desc">Learn, watch walkthroughs, and get workflow templates you can use.</div>
+          <div class="social-link">WATCH →</div>
+        </a>
+      </div>
+
+      <div class="cta reveal">
+        <h3 class="cta-title">Ready to get started</h3>
+        <p class="cta-text">Try Dreelio free, no credit card needed.</p>
+        <a class="btn btn-dark" href="#pricing">Try Dreelio free</a>
+      </div>
+
+      <footer class="footer">
+        <div class="foot-col">
+          <div class="brand brand-foot">
+            <span class="brand-dot"></span>
+            <span class="brand-name">Dreelio</span>
+          </div>
+          <p class="foot-text">Run your freelance business like a pro.</p>
+          <div class="foot-social">
+            <a href="#" aria-label="X">X</a>
+            <a href="#" aria-label="YouTube">YT</a>
+            <a href="#" aria-label="Email">Mail</a>
+          </div>
+          <div class="foot-note">© 2026 Dreelio. All rights reserved.</div>
+        </div>
+
+        <div class="foot-col">
+          <div class="foot-title">Pages</div>
+          <a href="#features">Features</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#blog">Blog</a>
+        </div>
+
+        <div class="foot-col">
+          <div class="foot-title">Information</div>
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms</a>
+          <a href="#">Support</a>
+          <a href="#">Contact</a>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
