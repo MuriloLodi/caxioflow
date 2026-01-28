@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/styles.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 <body class="page-home">
 
@@ -21,7 +21,7 @@
         </a>
 
         <nav class="nav-links" aria-label="Primary navigation">
-          <a href="#features">Funcionalidades</a>
+          <a href="./funcionalidades/">Funcionalidades</a>
           <a href="#benefits">Benefícios</a>
           <a href="#pricing">Planos</a>
           <a href="./blog/">Blog</a>
@@ -35,7 +35,7 @@
         </button>
       </div>
 
-      <div class="nav-mobile" hidden data-nav-mobile>
+      <div class="nav-mobile" data-nav-mobile>
         <a href="#features">Funcionalidades</a>
         <a href="#benefits">Benefícios</a>
         <a href="#pricing">Planos</a>
@@ -160,80 +160,247 @@
   </section>
 
   <!-- PRICING -->
-  <section class="section section-ice" id="pricing">
-    <div class="container">
-      <div class="section-head centered reveal">
-        <h2 class="h2">Planos simples<br/>para negócios organizados</h2>
-      </div>
-
-      <div class="pricing-grid reveal">
-        <article class="plan-card">
-          <div class="plan-top">
-            <div class="plan-kicker">Caxio Flow Básico</div>
-            <div class="plan-price">Grátis</div>
-            <div class="plan-desc">Para quem está começando.</div>
-          </div>
-
-          <ul class="plan-list">
-            <li>Controle financeiro básico</li>
-            <li>Agenda integrada</li>
-            <li>Gestão operacional</li>
-            <li>Acesso web</li>
-            <li>Aplicativo mobile</li>
-          </ul>
-
-          <a class="btn btn-muted w-100" href="#contact">Começar grátis</a>
-        </article>
-
-        <article class="plan-card plan-featured" data-plan="premium">
-          <div class="plan-toggle" role="tablist" aria-label="Billing toggle">
-            <button class="toggle-btn" type="button" data-billing="annually">Anual</button>
-            <button class="toggle-btn is-active" type="button" data-billing="monthly">Mensal</button>
-          </div>
-
-          <div class="plan-top">
-            <div class="plan-kicker-row">
-              <div class="plan-kicker">Caxio Flow Pro</div>
-              <span class="save-pill">Economize 20%</span>
-            </div>
-
-            <div class="plan-price">
-              <span data-price-monthly>R$189</span><span data-price-annually hidden>R$149</span><span class="per">/mês</span>
-            </div>
-            <div class="plan-desc">Para negócios em crescimento.</div>
-          </div>
-
-          <ul class="plan-list">
-            <li>Tudo do plano Básico</li>
-            <li>Relatórios financeiros</li>
-            <li>Controle avançado</li>
-            <li>Fluxo de caixa detalhado</li>
-            <li>Suporte prioritário</li>
-          </ul>
-
-          <a class="btn btn-dark w-100" href="#contact">Começar agora</a>
-        </article>
-
-        <article class="plan-card">
-          <div class="plan-top">
-            <div class="plan-kicker">Caxio Flow Empresas</div>
-            <div class="plan-price">Personalizado</div>
-            <div class="plan-desc">Para equipes e operações maiores.</div>
-          </div>
-
-          <ul class="plan-list">
-            <li>Tudo do plano Pro</li>
-            <li>Multiusuários</li>
-            <li>Integrações externas</li>
-            <li>Configurações personalizadas</li>
-            <li>Onboarding dedicado</li>
-          </ul>
-
-          <a class="btn btn-muted w-100" href="#contact">Falar com vendas</a>
-        </article>
-      </div>
+<!-- PRICING (Planos) -->
+<section class="section section-ice" id="pricing">
+  <div class="container">
+    <div class="section-head centered reveal">
+      <h2 class="h2">Planos</h2>
+      <p class="sub centered">Escolha o plano ideal para o seu momento.</p>
     </div>
-  </section>
+
+    <div class="plans-grid reveal">
+
+      <!-- Starter -->
+      <article class="planx-card">
+        <div class="planx-head">
+          <div>
+            <div class="planx-name">Starter</div>
+            <div class="planx-slug">starter</div>
+          </div>
+
+          <span class="planx-spark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 2l1.2 5.2L18 8.4l-4.8 1.2L12 15l-1.2-5.4L6 8.4l4.8-1.2L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M19.5 13.5l.6 2.3 2.4.7-2.4.7-.6 2.3-.6-2.3-2.4-.7 2.4-.7.6-2.3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+
+        <div class="planx-price">
+          <span class="planx-price-main">R$ 29,00</span>
+          <span class="planx-per">/mês</span>
+        </div>
+        <div class="planx-billing">Cobrança recorrente mensal</div>
+
+        <div class="planx-divider"></div>
+
+        <div class="planx-sec">Limites</div>
+        <ul class="planx-list">
+          <li>
+            <span class="planx-left">
+              <span class="planx-ic">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M16 11a4 4 0 1 0-8 0" stroke="currentColor" stroke-width="2"/><path d="M4 20c1.5-4 14.5-4 16 0" stroke="currentColor" stroke-width="2"/></svg>
+              </span>
+              Clientes
+            </span>
+            <span class="planx-right">50</span>
+          </li>
+
+          <li>
+            <span class="planx-left">
+              <span class="planx-ic">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M7 7h10M7 12h10M7 17h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+              Serviços
+            </span>
+            <span class="planx-right">200</span>
+          </li>
+
+          <li>
+            <span class="planx-left">
+              <span class="planx-ic">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M7 3h10v18H7z" stroke="currentColor" stroke-width="2"/><path d="M9 7h6M9 11h6M9 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+              Propostas/mês
+            </span>
+            <span class="planx-right">30</span>
+          </li>
+
+          <li>
+            <span class="planx-left">
+              <span class="planx-ic">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M7 3v3M17 3v3M4 9h16M6 6h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+              Agend./mês
+            </span>
+            <span class="planx-right">0</span>
+          </li>
+
+          <li>
+            <span class="planx-left">
+              <span class="planx-ic">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 7l8-4 8 4-8 4-8-4Z" stroke="currentColor" stroke-width="2"/><path d="M4 7v10l8 4 8-4V7" stroke="currentColor" stroke-width="2"/></svg>
+              </span>
+              Estoque itens
+            </span>
+            <span class="planx-right">200</span>
+          </li>
+        </ul>
+
+        <div class="planx-sec">Recursos</div>
+        <ul class="planx-list planx-list-feat">
+          <li>
+            <span class="planx-left"><span class="planx-dot"></span> Kanban</span>
+            <span class="planx-right">
+              <span class="planx-mark is-no" aria-label="Não incluso">✕</span>
+            </span>
+          </li>
+
+          <li>
+            <span class="planx-left"><span class="planx-dot"></span> Agenda pública</span>
+            <span class="planx-right">
+              <span class="planx-mark is-no" aria-label="Não incluso">✕</span>
+            </span>
+          </li>
+
+          <li>
+            <span class="planx-left"><span class="planx-dot"></span> Estoque</span>
+            <span class="planx-right">
+              <span class="planx-mark is-yes" aria-label="Incluso">✓</span>
+            </span>
+          </li>
+
+          <li>
+            <span class="planx-left"><span class="planx-dot"></span> Rotina</span>
+            <span class="planx-right">
+              <span class="planx-mark is-yes" aria-label="Incluso">✓</span>
+            </span>
+          </li>
+        </ul>
+
+        <a class="btn btn-primary w-100 planx-btn" href="#contact">
+          <span class="btn-ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M7 7h10v14H7z" stroke="currentColor" stroke-width="2"/>
+              <path d="M9 7V5a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          Assinar
+        </a>
+
+        <div class="planx-note">Ao assinar, o plano é aplicado à sua conta.</div>
+      </article>
+
+      <!-- Pro -->
+      <article class="planx-card">
+        <div class="planx-head">
+          <div>
+            <div class="planx-name">Pro</div>
+            <div class="planx-slug">pro</div>
+          </div>
+          <span class="planx-spark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 2l1.2 5.2L18 8.4l-4.8 1.2L12 15l-1.2-5.4L6 8.4l4.8-1.2L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M19.5 13.5l.6 2.3 2.4.7-2.4.7-.6 2.3-.6-2.3-2.4-.7 2.4-.7.6-2.3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+
+        <div class="planx-price">
+          <span class="planx-price-main">R$ 59,00</span>
+          <span class="planx-per">/mês</span>
+        </div>
+        <div class="planx-billing">Cobrança recorrente mensal</div>
+
+        <div class="planx-divider"></div>
+
+        <div class="planx-sec">Limites</div>
+        <ul class="planx-list">
+          <li><span class="planx-left"><span class="planx-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M16 11a4 4 0 1 0-8 0" stroke="currentColor" stroke-width="2"/><path d="M4 20c1.5-4 14.5-4 16 0" stroke="currentColor" stroke-width="2"/></svg></span>Clientes</span><span class="planx-right">300</span></li>
+          <li><span class="planx-left"><span class="planx-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 7h10M7 12h10M7 17h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>Serviços</span><span class="planx-right">1.500</span></li>
+          <li><span class="planx-left"><span class="planx-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3h10v18H7z" stroke="currentColor" stroke-width="2"/><path d="M9 7h6M9 11h6M9 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>Propostas/mês</span><span class="planx-right">200</span></li>
+          <li><span class="planx-left"><span class="planx-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3v3M17 3v3M4 9h16M6 6h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>Agend./mês</span><span class="planx-right">400</span></li>
+          <li><span class="planx-left"><span class="planx-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7l8-4 8 4-8 4-8-4Z" stroke="currentColor" stroke-width="2"/><path d="M4 7v10l8 4 8-4V7" stroke="currentColor" stroke-width="2"/></svg></span>Estoque itens</span><span class="planx-right">1.500</span></li>
+        </ul>
+
+        <div class="planx-sec">Recursos</div>
+        <ul class="planx-list planx-list-feat">
+          <li><span class="planx-left"><span class="planx-dot"></span> Kanban</span><span class="planx-right"><span class="planx-mark is-yes">✓</span></span></li>
+          <li><span class="planx-left"><span class="planx-dot"></span> Agenda pública</span><span class="planx-right"><span class="planx-mark is-yes">✓</span></span></li>
+          <li><span class="planx-left"><span class="planx-dot"></span> Estoque</span><span class="planx-right"><span class="planx-mark is-yes">✓</span></span></li>
+          <li><span class="planx-left"><span class="planx-dot"></span> Rotina</span><span class="planx-right"><span class="planx-mark is-yes">✓</span></span></li>
+        </ul>
+
+        <a class="btn btn-primary w-100 planx-btn" href="#contact">
+          <span class="btn-ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M7 7h10v14H7z" stroke="currentColor" stroke-width="2"/>
+              <path d="M9 7V5a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          Assinar
+        </a>
+
+        <div class="planx-note">Ao assinar, o plano é aplicado à sua conta.</div>
+      </article>
+
+      <!-- Business -->
+      <article class="planx-card">
+        <div class="planx-head">
+          <div>
+            <div class="planx-name">Business</div>
+            <div class="planx-slug">business</div>
+          </div>
+          <span class="planx-spark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 2l1.2 5.2L18 8.4l-4.8 1.2L12 15l-1.2-5.4L6 8.4l4.8-1.2L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M19.5 13.5l.6 2.3 2.4.7-2.4.7-.6 2.3-.6-2.3-2.4-.7 2.4-.7.6-2.3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+
+        <div class="planx-price">
+          <span class="planx-price-main">R$ 129,00</span>
+          <span class="planx-per">/mês</span>
+        </div>
+        <div class="planx-billing">Cobrança recorrente mensal</div>
+
+        <div class="planx-divider"></div>
+
+        <div class="planx-sec">Limites</div>
+        <ul class="planx-list">
+          <li><span class="planx-left"><span class="planx-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M16 11a4 4 0 1 0-8 0" stroke="currentColor" stroke-width="2"/><path d="M4 20c1.5-4 14.5-4 16 0" stroke="currentColor" stroke-width="2"/></svg></span>Clientes</span><span class="planx-right">Ilimitado</span></li>
+          <li><span class="planx-left"><span class="planx-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 7h10M7 12h10M7 17h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>Serviços</span><span class="planx-right">Ilimitado</span></li>
+          <li><span class="planx-left"><span class="planx-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3h10v18H7z" stroke="currentColor" stroke-width="2"/><path d="M9 7h6M9 11h6M9 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>Propostas/mês</span><span class="planx-right">Ilimitado</span></li>
+          <li><span class="planx-left"><span class="planx-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3v3M17 3v3M4 9h16M6 6h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>Agend./mês</span><span class="planx-right">Ilimitado</span></li>
+          <li><span class="planx-left"><span class="planx-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7l8-4 8 4-8 4-8-4Z" stroke="currentColor" stroke-width="2"/><path d="M4 7v10l8 4 8-4V7" stroke="currentColor" stroke-width="2"/></svg></span>Estoque itens</span><span class="planx-right">Ilimitado</span></li>
+        </ul>
+
+        <div class="planx-sec">Recursos</div>
+        <ul class="planx-list planx-list-feat">
+          <li><span class="planx-left"><span class="planx-dot"></span> Kanban</span><span class="planx-right"><span class="planx-mark is-yes">✓</span></span></li>
+          <li><span class="planx-left"><span class="planx-dot"></span> Agenda pública</span><span class="planx-right"><span class="planx-mark is-yes">✓</span></span></li>
+          <li><span class="planx-left"><span class="planx-dot"></span> Estoque</span><span class="planx-right"><span class="planx-mark is-yes">✓</span></span></li>
+          <li><span class="planx-left"><span class="planx-dot"></span> Rotina</span><span class="planx-right"><span class="planx-mark is-yes">✓</span></span></li>
+        </ul>
+
+        <a class="btn btn-primary w-100 planx-btn" href="#contact">
+          <span class="btn-ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M7 7h10v14H7z" stroke="currentColor" stroke-width="2"/>
+              <path d="M9 7V5a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          Assinar
+        </a>
+
+        <div class="planx-note">Ao assinar, o plano é aplicado à sua conta.</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
 
   <!-- BLOG PREVIEW -->
   <section class="section section-soft">
@@ -358,6 +525,7 @@
     </div>
   </section>
 
-  <script src="./assets/main.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
