@@ -1,14 +1,17 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Caxio Flow — Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
+
 <body class="page-home">
 
   <!-- NAV -->
@@ -22,12 +25,11 @@
 
         <nav class="nav-links" aria-label="Primary navigation">
           <a href="./funcionalidades/">Funcionalidades</a>
-          <a href="#benefits">Benefícios</a>
           <a href="./planos/">Planos</a>
-<a href="#faq">Perguntas</a>
+          <a href="#faq">Perguntas</a>
 
           <a href="./blog/">Blog</a>
-          <a href="#contact">Contato</a>
+        <a href="/contato/">Contato</a>
         </nav>
 
         <a class="btn btn-dark nav-cta" href="#pricing">Testar grátis</a>
@@ -39,25 +41,24 @@
 
       <div class="nav-mobile" data-nav-mobile>
         <a href="./funcionalidades/">Funcionalidades</a>
-        <a href="#benefits">Benefícios</a>
         <a href="./planos/">Planos</a>
-<a href="#faq">Perguntas</a>
+        <a href="#faq">Perguntas</a>
 
         <a href="./blog/">Blog</a>
-        <a href="#contact">Contato</a>
+        <a href="/contato/">Contato</a>
         <a class="btn btn-dark" href="#pricing">Testar grátis</a>
       </div>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="hero hero-sky" id="top">
+  <section class="hero hero-sky" id="top" data-tilt-section>
     <div class="sky-cloud sky-cloud-left" aria-hidden="true"></div>
     <div class="sky-cloud sky-cloud-right" aria-hidden="true"></div>
 
     <div class="container hero-container">
       <div class="hero-copy reveal">
-        <h1 class="hero-title">Controle seu negócio<br/>com clareza total</h1>
+        <h1 class="hero-title">Controle seu negócio<br />com clareza total</h1>
         <p class="hero-sub">
           Plataforma SaaS para gestão integrada de finanças, agenda e operações comerciais.
           Do controle financeiro à rotina diária, tudo em um só lugar.
@@ -70,50 +71,66 @@
       </div>
 
       <div class="hero-preview-wrap reveal" data-parallax="0.7">
-        <div class="hero-preview">
-          <img
-            src="assets/img/Screenshot_2.png"
-            alt="Painel do Caxio Flow"
-            loading="eager">
-        </div>
-      </div>
-
-      <div class="trust reveal">
-        <div class="trust-text">
-          Utilizado por empresas, prestadores de serviço e negócios que precisam de controle real
-        </div>
-        <div class="trust-logos" aria-label="Customer logos">
-          <span>EMPRESAS</span>
-          <span>SERVIÇOS</span>
-          <span>COMÉRCIO</span>
-          <span>STARTUPS</span>
-          <span>SAAS</span>
-          <span>NEGÓCIOS</span>
+        <div class="hero-preview" data-tilt-card>
+          <img src="assets/img/Screenshot_2.png" alt="Painel do Caxio Flow" loading="eager">
         </div>
       </div>
     </div>
   </section>
+
+  <!-- TRUSTED / LOGO MARQUEE -->
+  <section class="logo-strip">
+    <div class="container">
+      <div class="logo-strip-title">Trusted by 7,000+ top startups, freelancers and studios</div>
+
+      <div class="logo-marquee" aria-label="Customer logos">
+        <div class="logo-marquee-track">
+          <!-- SET 1 -->
+          <div class="logo-item">Amsterdam</div>
+          <div class="logo-item logo-bold">SAVANNAH</div>
+          <div class="logo-item">
+            <span class="logo-badge">M</span> MILANO
+          </div>
+          <div class="logo-item">luminous</div>
+          <div class="logo-item logo-script">theo</div>
+          <div class="logo-item">Amsterdam</div>
+
+          <!-- SET 2 (duplicado pra loop infinito) -->
+          <div class="logo-item">Amsterdam</div>
+          <div class="logo-item logo-bold">SAVANNAH</div>
+          <div class="logo-item">
+            <span class="logo-badge">M</span> MILANO
+          </div>
+          <div class="logo-item">luminous</div>
+          <div class="logo-item logo-script">theo</div>
+          <div class="logo-item">Amsterdam</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- DEVICE -->
   <section class="section section-soft" id="benefits">
     <div class="container">
       <div class="section-head centered reveal">
         <div class="pill-label">MULTIPLATAFORMA</div>
-        <h2 class="h2">Acesse de qualquer lugar,<br/>sem perder o controle</h2>
+        <h2 class="h2">Acesse de qualquer lugar,<br />sem perder o controle</h2>
       </div>
 
       <div class="device-card reveal" data-parallax="0.35">
         <div class="device-media">
           <img class="device-img is-active" data-device="mobile"
-               src="https://framerusercontent.com/images/W508S15xkXJdvalNWW9jYJSIKg.png?width=920&height=776"
-               alt="Aplicativo mobile" loading="lazy">
+            src="https://framerusercontent.com/images/W508S15xkXJdvalNWW9jYJSIKg.png?width=920&height=776"
+            alt="Aplicativo mobile" loading="lazy">
           <img class="device-img" data-device="web"
-               src="https://framerusercontent.com/images/pfcMvn2ZHHeXQ5LknPj2NNf2SQ.png?width=920&height=778"
-               alt="Sistema web" loading="lazy">
+            src="https://framerusercontent.com/images/pfcMvn2ZHHeXQ5LknPj2NNf2SQ.png?width=920&height=778"
+            alt="Sistema web" loading="lazy">
         </div>
 
         <div class="segmented" role="tablist" aria-label="Device tabs">
-          <button class="seg-btn is-active" type="button" data-device-btn="mobile" aria-selected="true">Aplicativo Mobile</button>
+          <button class="seg-btn is-active" type="button" data-device-btn="mobile" aria-selected="true">Aplicativo
+            Mobile</button>
           <button class="seg-btn" type="button" data-device-btn="web" aria-selected="false">Versão Web</button>
         </div>
       </div>
@@ -127,13 +144,13 @@
         <div class="feature-media reveal" data-parallax="0.3">
           <div class="media-shell media-shell-cream">
             <img src="https://framerusercontent.com/images/gUEFVWinyzqAJ4r7gBTv97dNy8.png?width=1200&height=888"
-                 alt="Gestão operacional" loading="lazy">
+              alt="Gestão operacional" loading="lazy">
           </div>
         </div>
 
         <div class="feature-copy reveal">
           <div class="pill-label">GESTÃO OPERACIONAL</div>
-          <h3 class="h3">Organize tarefas,<br/>processos e rotina</h3>
+          <h3 class="h3">Organize tarefas,<br />processos e rotina</h3>
           <p class="p">
             Centralize atividades, compromissos e operações do seu negócio.
             Mais organização, menos erros e total visibilidade.
@@ -146,13 +163,13 @@
         <div class="feature-media reveal" data-parallax="0.3">
           <div class="media-shell media-shell-cream">
             <img src="https://framerusercontent.com/images/thBhwy66kPqQ7HBg4Q1OWQyQVI.png?width=1200&height=888"
-                 alt="Gestão financeira" loading="lazy">
+              alt="Gestão financeira" loading="lazy">
           </div>
         </div>
 
         <div class="feature-copy reveal">
           <div class="pill-label">GESTÃO FINANCEIRA</div>
-          <h3 class="h3">Controle financeiro<br/>simples e eficiente</h3>
+          <h3 class="h3">Controle financeiro<br />simples e eficiente</h3>
           <p class="p">
             Acompanhe receitas, despesas e fluxo de caixa sem complicação.
             Tome decisões com base em dados reais.
@@ -163,115 +180,287 @@
     </div>
   </section>
 
-<!-- FAQ -->
-<section class="section section-ice" id="faq">
-  <div class="container">
-    <div class="section-head centered reveal">
-      <div class="pill-label">PERGUNTAS FREQUENTES</div>
-      <h2 class="h2">Dúvidas rápidas</h2>
-      <p class="sub centered">Respostas diretas sobre planos, agenda pública e funcionamento.</p>
+  <!-- DEPOIMENTOS (fixo em cima + marquee infinito embaixo) -->
+  <section class="section section-soft" id="depoimentos">
+    <div class="container">
+
+      <!-- Depoimento FIXO (não muda) -->
+      <div class="testi-fixed reveal">
+        <div class="pill-label">DEPOIMENTOS</div>
+
+        <h2 class="testi-fixed-quote">
+          “Caxio Flow é de longe o melhor sistema que eu já usei pra organizar financeiro e rotina.
+          Ficou tudo claro e rápido.”
+        </h2>
+
+        <div class="testi-fixed-person">
+          <img class="testi-fixed-avatar"
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80"
+            alt="Foto do depoente" loading="lazy" />
+          <div class="testi-fixed-name">Marina Costa</div>
+          <div class="testi-fixed-role">Diretora, Studio M</div>
+        </div>
+      </div>
+
+      <!-- Marquee infinito (cards andando sozinho) -->
+      <div class="testi-marquee reveal" aria-label="Depoimentos em carrossel">
+        <div class="testi-marquee-viewport">
+          <div class="testi-marquee-track">
+
+            <!-- SET 1 -->
+            <article class="testi-mini">
+              <p class="testi-mini-quote">
+                “Saí da planilha. Em 10 min eu sei o que entrou, o que saiu e o que vence.”
+              </p>
+              <div class="testi-mini-person">
+                <img class="testi-mini-avatar"
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80"
+                  alt="Lucas Almeida" loading="lazy" />
+                <div>
+                  <div class="testi-mini-name">Lucas Almeida</div>
+                  <div class="testi-mini-role">Consultor</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="testi-mini">
+              <p class="testi-mini-quote">
+                “Agenda pública virou meu principal canal. Cliente agenda sozinho e eu só confirmo.”
+              </p>
+              <div class="testi-mini-person">
+                <img class="testi-mini-avatar"
+                  src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?auto=format&fit=crop&w=120&q=80"
+                  alt="Paula Mendes" loading="lazy" />
+                <div>
+                  <div class="testi-mini-name">Paula Mendes</div>
+                  <div class="testi-mini-role">Comercial</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="testi-mini">
+              <p class="testi-mini-quote">
+                “O dashboard me dá visão do mês: propostas, recebimentos e metas sem confusão.”
+              </p>
+              <div class="testi-mini-person">
+                <img class="testi-mini-avatar"
+                  src="https://images.unsplash.com/photo-1520975958225-1e8c8f1bfc64?auto=format&fit=crop&w=120&q=80"
+                  alt="Renato Silva" loading="lazy" />
+                <div>
+                  <div class="testi-mini-name">Renato Silva</div>
+                  <div class="testi-mini-role">Sócio</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="testi-mini">
+              <p class="testi-mini-quote">
+                “Organizei processos e tarefas. Parou de ter coisa perdida no WhatsApp.”
+              </p>
+              <div class="testi-mini-person">
+                <img class="testi-mini-avatar"
+                  src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=120&q=80"
+                  alt="Aline Souza" loading="lazy" />
+                <div>
+                  <div class="testi-mini-name">Aline Souza</div>
+                  <div class="testi-mini-role">Operações</div>
+                </div>
+              </div>
+            </article>
+
+            <!-- SET 2 (duplicado para loop infinito) -->
+            <article class="testi-mini">
+              <p class="testi-mini-quote">
+                “Saí da planilha. Em 10 min eu sei o que entrou, o que saiu e o que vence.”
+              </p>
+              <div class="testi-mini-person">
+                <img class="testi-mini-avatar"
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80"
+                  alt="Lucas Almeida" loading="lazy" />
+                <div>
+                  <div class="testi-mini-name">Lucas Almeida</div>
+                  <div class="testi-mini-role">Consultor</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="testi-mini">
+              <p class="testi-mini-quote">
+                “Agenda pública virou meu principal canal. Cliente agenda sozinho e eu só confirmo.”
+              </p>
+              <div class="testi-mini-person">
+                <img class="testi-mini-avatar"
+                  src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?auto=format&fit=crop&w=120&q=80"
+                  alt="Paula Mendes" loading="lazy" />
+                <div>
+                  <div class="testi-mini-name">Paula Mendes</div>
+                  <div class="testi-mini-role">Comercial</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="testi-mini">
+              <p class="testi-mini-quote">
+                “O dashboard me dá visão do mês: propostas, recebimentos e metas sem confusão.”
+              </p>
+              <div class="testi-mini-person">
+                <img class="testi-mini-avatar"
+                  src="https://images.unsplash.com/photo-1520975958225-1e8c8f1bfc64?auto=format&fit=crop&w=120&q=80"
+                  alt="Renato Silva" loading="lazy" />
+                <div>
+                  <div class="testi-mini-name">Renato Silva</div>
+                  <div class="testi-mini-role">Sócio</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="testi-mini">
+              <p class="testi-mini-quote">
+                “Organizei processos e tarefas. Parou de ter coisa perdida no WhatsApp.”
+              </p>
+              <div class="testi-mini-person">
+                <img class="testi-mini-avatar"
+                  src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=120&q=80"
+                  alt="Aline Souza" loading="lazy" />
+                <div>
+                  <div class="testi-mini-name">Aline Souza</div>
+                  <div class="testi-mini-role">Operações</div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+
     </div>
+  </section>
 
-    <div class="faq-grid reveal">
 
-      <details class="faq-item">
-        <summary class="faq-q">
-          Como funciona a cobrança dos planos?
-          <span class="faq-ic" aria-hidden="true">+</span>
-        </summary>
-        <div class="faq-a">
-          A cobrança é <strong>mensal recorrente</strong>. Ao assinar, o plano é aplicado na sua conta e você pode mudar de plano quando quiser.
+
+  <!-- FAQ -->
+  <section class="section section-ice" id="faq">
+    <div class="container">
+      <div class="section-head centered reveal">
+        <div class="pill-label">PERGUNTAS FREQUENTES</div>
+        <h2 class="h2">Dúvidas rápidas</h2>
+        <p class="sub centered">Respostas diretas sobre planos, agenda pública e funcionamento.</p>
+      </div>
+
+      <div class="faq-cols reveal" data-faq-root>
+
+        <!-- COLUNA ESQUERDA -->
+        <div class="faq-col">
+          <details class="faq-item" data-faq>
+            <summary class="faq-q">
+              <span class="faq-q-text">Como funciona a cobrança dos planos?</span>
+              <span class="faq-ic" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-a">
+              A cobrança é <strong>mensal recorrente</strong>. Ao assinar, o plano é aplicado na sua conta e você pode
+              mudar de plano quando quiser.
+            </div>
+          </details>
+
+          <details class="faq-item" data-faq>
+            <summary class="faq-q">
+              <span class="faq-q-text">O que é a Agenda pública (link)?</span>
+              <span class="faq-ic" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-a">
+              É um <strong>link público</strong> para seus clientes agendarem horário direto — você pode mandar no
+              WhatsApp, colocar no site ou na bio.
+            </div>
+          </details>
+
+          <details class="faq-item" data-faq>
+            <summary class="faq-q">
+              <span class="faq-q-text">O Dashboard Comercial faz o quê?</span>
+              <span class="faq-ic" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-a">
+              Mostra uma visão do mês com <strong>cards de resultados</strong>, <strong>pipeline</strong> e
+              <strong>gráficos</strong> para acompanhar vendas, pagamentos e propostas com filtro por mês/ano.
+            </div>
+          </details>
+
+          <details class="faq-item" data-faq>
+            <summary class="faq-q">
+              <span class="faq-q-text">Como funcionam os limites (clientes, serviços, propostas, etc.)?</span>
+              <span class="faq-ic" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-a">
+              Cada plano possui limites definidos. O plano <strong>Business</strong> pode ser <strong>ilimitado</strong>
+              em vários itens, conforme sua tabela.
+            </div>
+          </details>
         </div>
-      </details>
 
-      <details class="faq-item">
-        <summary class="faq-q">
-          Posso cancelar quando quiser?
-          <span class="faq-ic" aria-hidden="true">+</span>
-        </summary>
-        <div class="faq-a">
-          Sim. Você pode cancelar a assinatura a qualquer momento e o acesso permanece até o final do período já pago.
+        <!-- COLUNA DIREITA -->
+        <div class="faq-col">
+          <details class="faq-item" data-faq>
+            <summary class="faq-q">
+              <span class="faq-q-text">Posso cancelar quando quiser?</span>
+              <span class="faq-ic" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-a">
+              Sim. Você pode cancelar a assinatura a qualquer momento e o acesso permanece até o final do período já
+              pago.
+            </div>
+          </details>
+
+          <details class="faq-item" data-faq>
+            <summary class="faq-q">
+              <span class="faq-q-text">Em quais planos a Agenda pública está disponível?</span>
+              <span class="faq-ic" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-a">
+              A Agenda pública fica disponível nos planos <strong>Pro</strong> e <strong>Business</strong> (conforme sua
+              tabela de recursos).
+            </div>
+          </details>
+
+          <details class="faq-item" data-faq>
+            <summary class="faq-q">
+              <span class="faq-q-text">Consigo exportar relatórios?</span>
+              <span class="faq-ic" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-a">
+              Sim — você pode exportar relatórios em <strong>CSV</strong> e também gerar <strong>PDF executivo</strong>
+              conforme o módulo.
+            </div>
+          </details>
+
+          <details class="faq-item" data-faq>
+            <summary class="faq-q">
+              <span class="faq-q-text">Posso migrar de plano depois?</span>
+              <span class="faq-ic" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-a">
+              Sim. Você pode evoluir de Starter para Pro/Business quando precisar, sem perder seus dados.
+            </div>
+          </details>
         </div>
-      </details>
 
-      <details class="faq-item">
-        <summary class="faq-q">
-          O que é a Agenda pública (link)?
-          <span class="faq-ic" aria-hidden="true">+</span>
-        </summary>
-        <div class="faq-a">
-          É um <strong>link público</strong> para seus clientes agendarem horário direto — você pode mandar no WhatsApp, colocar no site ou na bio.
+      </div>
+
+
+      <div class="faq-cta reveal">
+        <div class="faq-cta-card">
+          <div class="faq-cta-title">Quer ver os planos agora?</div>
+          <div class="faq-cta-sub">Compare limites e recursos e assine o ideal.</div>
+          <a class="btn btn-dark" href="./planos/">Ver planos</a>
         </div>
-      </details>
-
-      <details class="faq-item">
-        <summary class="faq-q">
-          Em quais planos a Agenda pública está disponível?
-          <span class="faq-ic" aria-hidden="true">+</span>
-        </summary>
-        <div class="faq-a">
-          A Agenda pública fica disponível nos planos <strong>Pro</strong> e <strong>Business</strong> (conforme sua tabela de recursos).
-        </div>
-      </details>
-
-      <details class="faq-item">
-        <summary class="faq-q">
-          O Dashboard Comercial faz o quê?
-          <span class="faq-ic" aria-hidden="true">+</span>
-        </summary>
-        <div class="faq-a">
-          Mostra uma visão do mês com <strong>cards de resultados</strong>, <strong>pipeline</strong> e <strong>gráficos</strong> para acompanhar vendas, pagamentos e propostas com filtro por mês/ano.
-        </div>
-      </details>
-
-      <details class="faq-item">
-        <summary class="faq-q">
-          Consigo exportar relatórios?
-          <span class="faq-ic" aria-hidden="true">+</span>
-        </summary>
-        <div class="faq-a">
-          Sim — você pode exportar relatórios em <strong>CSV</strong> e também gerar <strong>PDF executivo</strong> conforme o módulo.
-        </div>
-      </details>
-
-      <details class="faq-item">
-        <summary class="faq-q">
-          Como funcionam os limites (clientes, serviços, propostas, etc.)?
-          <span class="faq-ic" aria-hidden="true">+</span>
-        </summary>
-        <div class="faq-a">
-          Cada plano possui limites definidos. O plano <strong>Business</strong> pode ser <strong>ilimitado</strong> em vários itens, conforme sua tabela.
-        </div>
-      </details>
-
-      <details class="faq-item">
-        <summary class="faq-q">
-          Posso migrar de plano depois?
-          <span class="faq-ic" aria-hidden="true">+</span>
-        </summary>
-        <div class="faq-a">
-          Sim. Você pode evoluir de Starter para Pro/Business quando precisar, sem perder seus dados.
-        </div>
-      </details>
-
-    </div>
-
-    <div class="faq-cta reveal">
-      <div class="faq-cta-card">
-        <div class="faq-cta-title">Quer ver os planos agora?</div>
-        <div class="faq-cta-sub">Compare limites e recursos e assine o ideal.</div>
-        <a class="btn btn-dark" href="./planos/">Ver planos</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- BLOG PREVIEW -->
   <section class="section section-soft">
     <div class="container">
       <div class="section-head centered reveal">
         <div class="pill-label">BLOG</div>
-        <h2 class="h2">Gestão, finanças<br/>e crescimento real</h2>
+        <h2 class="h2">Gestão, finanças<br />e crescimento real</h2>
         <p class="sub centered">
           Conteúdos práticos para quem quer organizar o negócio,
           melhorar resultados e sair da planilha.
@@ -282,7 +471,7 @@
         <div class="blog-feature-img" aria-hidden="true"></div>
         <div class="blog-feature-body">
           <span class="tag tag-dark">LEITURA ESSENCIAL</span>
-          <h3 class="blog-feature-title">Como organizar as finanças<br/>do seu negócio em 2025</h3>
+          <h3 class="blog-feature-title">Como organizar as finanças<br />do seu negócio em 2025</h3>
           <p class="blog-feature-desc">
             Um guia direto para assumir o controle financeiro
             e tomar decisões melhores.
@@ -291,7 +480,7 @@
           <div class="blog-feature-bottom">
             <div class="author">
               <img class="avatar" alt="Equipe Caxio Flow"
-                   src="https://framerusercontent.com/images/Et6DumDmh2RQ0iDyCSQ6tfsZ8.jpg?width=200&height=200">
+                src="https://framerusercontent.com/images/Et6DumDmh2RQ0iDyCSQ6tfsZ8.jpg?width=200&height=200">
               <div>
                 <div class="author-name">Equipe Caxio Flow</div>
                 <div class="author-role">Conteúdo & Produto</div>
@@ -304,44 +493,64 @@
 
       <div class="blog-grid reveal">
         <a class="blog-card" href="./blog/">
-          <div class="blog-img" style="background-image:url('https://framerusercontent.com/images/WkcfohGmGxdaZXOQkB8urlpwXg.png?width=1600&height=1200');"></div>
+          <div class="blog-img"
+            style="background-image:url('https://framerusercontent.com/images/WkcfohGmGxdaZXOQkB8urlpwXg.png?width=1600&height=1200');">
+          </div>
           <div class="blog-card-row">
-            <div class="blog-card-title">Fluxo de caixa:<br/>o erro que quebra empresas</div>
+            <div class="blog-card-title">Fluxo de caixa:<br />o erro que quebra empresas</div>
             <span class="tag tag-blue">FINANÇAS</span>
           </div>
         </a>
 
         <a class="blog-card" href="./blog/">
-          <div class="blog-img" style="background-image:url('https://framerusercontent.com/images/gxb6A1j9Y0wXrhIBrMQD21JI.png?width=1600&height=1200');"></div>
+          <div class="blog-img"
+            style="background-image:url('https://framerusercontent.com/images/gxb6A1j9Y0wXrhIBrMQD21JI.png?width=1600&height=1200');">
+          </div>
           <div class="blog-card-row">
-            <div class="blog-card-title">Agenda organizada =<br/>mais produtividade</div>
+            <div class="blog-card-title">Agenda organizada =<br />mais produtividade</div>
             <span class="tag tag-orange">GESTÃO</span>
           </div>
         </a>
 
         <a class="blog-card" href="./blog/">
-          <div class="blog-img" style="background-image:url('https://framerusercontent.com/images/6MWnqkgs4vXAeKOFbYmLtdJtL8.png?width=1600&height=1200');"></div>
+          <div class="blog-img"
+            style="background-image:url('https://framerusercontent.com/images/6MWnqkgs4vXAeKOFbYmLtdJtL8.png?width=1600&height=1200');">
+          </div>
           <div class="blog-card-row">
-            <div class="blog-card-title">Quando sair da planilha<br/>e usar um sistema</div>
+            <div class="blog-card-title">Quando sair da planilha<br />e usar um sistema</div>
             <span class="tag tag-green">NEGÓCIOS</span>
           </div>
         </a>
       </div>
     </div>
   </section>
+      <section class="cta-faznota">
+        <div class="container position-relative">
+            <div class="cta-box">
+                <div class="cta-content">
+                    <h2>Abra sua conta com o <span>FazNota</span></h2>
+                    <p>
+                        Simplifique sua rotina fiscal e organize o financeiro da sua empresa.
+                        No FazNota, emitir notas é rápido, seguro e sem complicação.
+                    </p>
+                    <a href="https://faznota.mysebr.com.br/app/checkout/checkout_contrato.jsp"
+                        class="btn mt-3 btn-conheca3 btn-animated btn-big-button js-modal-trial-request-show ">Criar
+                        conta grátis</a>
+                </div>
 
-  <!-- READY -->
-  <section class="section section-sky" id="contact">
+
+                <div class="cta-shape"></div>
+
+                <img src="https://faznota.com.br/assets/img/mulher.png" alt="Empresário usando FazNota" class="cta-img" />
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-sky" id="contact">
     <div class="sky-cloud sky-cloud-left" aria-hidden="true"></div>
     <div class="sky-cloud sky-cloud-right" aria-hidden="true"></div>
 
     <div class="container">
-      <div class="ready reveal">
-        <h2 class="ready-title">Pronto para ter controle de verdade?</h2>
-        <p class="ready-sub">Comece agora. Sem cartão de crédito.</p>
-        <a class="btn btn-dark" href="#pricing">Testar grátis</a>
-      </div>
-
       <footer class="footer-card reveal">
         <div class="footer-top">
           <div class="footer-left">
@@ -363,15 +572,15 @@
           <div class="footer-cols">
             <div class="footer-col">
               <div class="footer-h">PÁGINAS</div>
-              <a href="./index.html">Home</a>
-              <a href="#features">Funcionalidades</a>
-              <a href="#pricing">Planos</a>
-              <a href="./blog/">Blog</a>
+              <a href="../index.html">Home</a>
+              <a href="../funcionalidades/">Funcionalidades</a>
+              <a href="./">Planos</a>
+              <a href="../blog/">Blog</a>
             </div>
 
             <div class="footer-col">
               <div class="footer-h">INFORMAÇÕES</div>
-              <a href="#contact">Contato</a>
+              <a href="../index.html#faq">Perguntas frequentes</a>
               <a href="#">Privacidade</a>
               <a href="#">Termos de uso</a>
               <a href="#">404</a>
@@ -383,7 +592,8 @@
 
         <div class="footer-bottom">
           <div>© 2025 Caxio Flow. Todos os direitos reservados.</div>
-          <div>Desenvolvido por <strong>Murilo Lodi</strong></div>
+          <div>Desenvolvido por <a href="http://lodservices.com.br" target="_blank"
+            rel="noopener noreferrer"><strong>LodServices</strong></a> </div>
         </div>
       </footer>
     </div>
@@ -392,4 +602,5 @@
   <script src="./assets/js/app.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
+
 </html>

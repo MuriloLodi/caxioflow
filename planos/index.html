@@ -25,8 +25,8 @@
 
         <nav class="nav-links" aria-label="Primary navigation">
           <a href="../funcionalidades/">Funcionalidades</a>
-          <a href="../index.html#benefits">Benefícios</a>
           <a class="is-active" href="./">Planos</a>
+          <a href="../index.html#faq">Perguntas</a>
           <a href="../blog/">Blog</a>
           <a href="../index.html#contact">Contato</a>
         </nav>
@@ -40,8 +40,8 @@
 
       <div class="nav-mobile" data-nav-mobile>
         <a href="../funcionalidades/">Funcionalidades</a>
-        <a href="../index.html#benefits">Benefícios</a>
         <a class="is-active" href="./">Planos</a>
+        <a href="../index.html#faq">Perguntas</a>
         <a href="../blog/">Blog</a>
         <a href="../index.html#contact">Contato</a>
         <a class="btn btn-dark" href="../index.html#contact">Falar com vendas</a>
@@ -59,47 +59,76 @@
         <div class="pill-label">PLANOS</div>
         <h1 class="hero-title hero-title-feat">Escolha o plano<br/>certo pra você</h1>
         <p class="hero-sub hero-sub-feat">
-          Assinatura mensal recorrente. Você pode evoluir de plano conforme o crescimento do seu negócio.
+          Você pode começar por um módulo (Finanças/Comercial) ou pegar um plano completo (Starter/Pro/Business).
+          Alterne entre mensal e anual quando quiser.
         </p>
 
         <div class="hero-actions">
           <a class="btn btn-dark" href="#planos">Ver planos</a>
-          <a class="btn btn-soft" href="../index.html#faq">Dúvidas frequentes</a>
+          <a class="btn btn-soft" href="#faq-planos">Dúvidas</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PLANOS -->
-  <section class="section section-ice" id="planos">
-    <div class="container">
-      <div class="section-head centered reveal">
-        <h2 class="h2">Planos e recursos</h2>
-        <p class="sub centered">Starter, Pro e Business — com limites e recursos.</p>
+<!-- PLANOS -->
+<section class="section section-ice" id="planos">
+  <div class="container">
+    <div class="section-head centered reveal">
+      <h2 class="h2">Planos e recursos</h2>
+      <p class="sub centered">Planos completos (para usar tudo) ou módulos (para necessidades específicas).</p>
+
+      <!-- Toggle mensal/anual -->
+      <div class="plans-toggle-wrap">
+        <div class="plan-toggle plan-toggle-fancy" data-price-toggle>
+          <span class="toggle-indicator" aria-hidden="true"></span>
+          <button class="toggle-btn is-active" type="button" data-billing="monthly">Mensal</button>
+          <button class="toggle-btn" type="button" data-billing="annual">Anual</button>
+        </div>
+        <div class="plans-toggle-note">
+          No anual você paga 1x e mantém o acesso por 12 meses.
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO: PRINCIPAIS -->
+    <div class="pricing-block reveal">
+      <div class="pricing-block-head">
+        <div>
+          <div class="pill-label pill-label-soft">PLANOS COMPLETOS</div>
+          <h3 class="pricing-h3">Os 3 planos principais</h3>
+          <p class="pricing-sub">Para quem quer o Caxio Flow completo (rotina, agenda, gestão e operação).</p>
+        </div>
       </div>
 
-      <div class="plans-grid reveal">
+      <div class="plans-grid plans-grid-main">
 
-        <!-- Starter -->
-        <article class="planx-card">
+        <!-- STARTER -->
+        <article class="planx-card card-premium is-primary">
+          <div class="card-glow" aria-hidden="true"></div>
+
           <div class="planx-head">
             <div>
-              <div class="planx-name">Starter</div>
+              <div class="planx-name">Starter <span class="planx-pill planx-pill-primary">Completo</span></div>
               <div class="planx-slug">starter</div>
             </div>
-            <span class="planx-spark" aria-hidden="true">
+            <span class="planx-spark spark-anim" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none">
                 <path d="M12 2l1.2 5.2L18 8.4l-4.8 1.2L12 15l-1.2-5.4L6 8.4l4.8-1.2L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M19.5 13.5l.6 2.3 2.4.7-2.4.7-.6 2.3-.6-2.3-2.4-.7 2.4-.7.6-2.3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
               </svg>
             </span>
           </div>
 
           <div class="planx-price">
-            <span class="planx-price-main">R$ 29,00</span>
-            <span class="planx-per">/mês</span>
+            <span class="planx-price-main" data-price="monthly">R$ 29,00</span>
+            <span class="planx-price-main" data-price="annual">R$ 249,00</span>
+            <span class="planx-per" data-price="monthly">/mês</span>
+            <span class="planx-per" data-price="annual">/ano</span>
           </div>
-          <div class="planx-billing">Cobrança recorrente mensal</div>
+          <div class="planx-billing">
+            <span data-price="monthly">Cobrança recorrente mensal</span>
+            <span data-price="annual">Pagamento anual (1x)</span>
+          </div>
 
           <div class="planx-divider"></div>
 
@@ -120,39 +149,36 @@
             <li><span class="planx-left"><span class="planx-dot"></span> Rotina</span><span class="planx-right"><span class="planx-mark is-yes">✓</span></span></li>
           </ul>
 
-          <a class="btn btn-primary w-100 planx-btn" href="../index.html#contact">
-            <span class="btn-ic" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M7 7h10v14H7z" stroke="currentColor" stroke-width="2"/>
-                <path d="M9 7V5a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </span>
-            Assinar
-          </a>
-
-          <div class="planx-note">Ao assinar, o plano é aplicado à sua conta.</div>
+          <a class="btn btn-primary w-100 planx-btn" href="../index.html#contact">Assinar</a>
+          <div class="planx-note">Plano completo de entrada.</div>
         </article>
 
-        <!-- Pro -->
-        <article class="planx-card">
+        <!-- PRO (ATUAL) -->
+        <article class="planx-card card-premium is-primary is-current">
+          <div class="card-glow" aria-hidden="true"></div>
+
           <div class="planx-head">
             <div>
-              <div class="planx-name">Pro</div>
+              <div class="planx-name">Pro <span class="planx-pill planx-pill-current">Atual</span></div>
               <div class="planx-slug">pro</div>
             </div>
-            <span class="planx-spark" aria-hidden="true">
+            <span class="planx-spark spark-anim" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none">
                 <path d="M12 2l1.2 5.2L18 8.4l-4.8 1.2L12 15l-1.2-5.4L6 8.4l4.8-1.2L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M19.5 13.5l.6 2.3 2.4.7-2.4.7-.6 2.3-.6-2.3-2.4-.7 2.4-.7.6-2.3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
               </svg>
             </span>
           </div>
 
           <div class="planx-price">
-            <span class="planx-price-main">R$ 59,00</span>
-            <span class="planx-per">/mês</span>
+            <span class="planx-price-main" data-price="monthly">R$ 59,00</span>
+            <span class="planx-price-main" data-price="annual">R$ 499,00</span>
+            <span class="planx-per" data-price="monthly">/mês</span>
+            <span class="planx-per" data-price="annual">/ano</span>
           </div>
-          <div class="planx-billing">Cobrança recorrente mensal</div>
+          <div class="planx-billing">
+            <span data-price="monthly">Cobrança recorrente mensal</span>
+            <span data-price="annual">Pagamento anual (1x)</span>
+          </div>
 
           <div class="planx-divider"></div>
 
@@ -173,39 +199,36 @@
             <li><span class="planx-left"><span class="planx-dot"></span> Rotina</span><span class="planx-right"><span class="planx-mark is-yes">✓</span></span></li>
           </ul>
 
-          <a class="btn btn-primary w-100 planx-btn" href="../index.html#contact">
-            <span class="btn-ic" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M7 7h10v14H7z" stroke="currentColor" stroke-width="2"/>
-                <path d="M9 7V5a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </span>
-            Assinar
-          </a>
-
-          <div class="planx-note">Ao assinar, o plano é aplicado à sua conta.</div>
+          <a class="btn btn-muted w-100 planx-btn is-disabled" href="javascript:void(0)">Plano atual</a>
+          <div class="planx-note">Você já está nesse plano.</div>
         </article>
 
-        <!-- Business -->
-        <article class="planx-card">
+        <!-- BUSINESS -->
+        <article class="planx-card card-premium is-primary">
+          <div class="card-glow" aria-hidden="true"></div>
+
           <div class="planx-head">
             <div>
-              <div class="planx-name">Business</div>
+              <div class="planx-name">Business <span class="planx-pill planx-pill-primary">Completo</span></div>
               <div class="planx-slug">business</div>
             </div>
-            <span class="planx-spark" aria-hidden="true">
+            <span class="planx-spark spark-anim" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none">
                 <path d="M12 2l1.2 5.2L18 8.4l-4.8 1.2L12 15l-1.2-5.4L6 8.4l4.8-1.2L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M19.5 13.5l.6 2.3 2.4.7-2.4.7-.6 2.3-.6-2.3-2.4-.7 2.4-.7.6-2.3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
               </svg>
             </span>
           </div>
 
           <div class="planx-price">
-            <span class="planx-price-main">R$ 129,00</span>
-            <span class="planx-per">/mês</span>
+            <span class="planx-price-main" data-price="monthly">R$ 129,00</span>
+            <span class="planx-price-main" data-price="annual">R$ 999,00</span>
+            <span class="planx-per" data-price="monthly">/mês</span>
+            <span class="planx-per" data-price="annual">/ano</span>
           </div>
-          <div class="planx-billing">Cobrança recorrente mensal</div>
+          <div class="planx-billing">
+            <span data-price="monthly">Cobrança recorrente mensal</span>
+            <span data-price="annual">Pagamento anual (1x)</span>
+          </div>
 
           <div class="planx-divider"></div>
 
@@ -226,26 +249,191 @@
             <li><span class="planx-left"><span class="planx-dot"></span> Rotina</span><span class="planx-right"><span class="planx-mark is-yes">✓</span></span></li>
           </ul>
 
-          <a class="btn btn-primary w-100 planx-btn" href="../index.html#contact">
-            <span class="btn-ic" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M7 7h10v14H7z" stroke="currentColor" stroke-width="2"/>
-                <path d="M9 7V5a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </span>
-            Assinar
-          </a>
-
-          <div class="planx-note">Ao assinar, o plano é aplicado à sua conta.</div>
+          <a class="btn btn-primary w-100 planx-btn" href="../index.html#contact">Assinar</a>
+          <div class="planx-note">Para operação completa e crescimento sem limites.</div>
         </article>
 
       </div>
+    </div>
 
-      <div class="plans-bottom reveal">
-        <div class="plans-bottom-card">
-          <div class="plans-bottom-title">Precisa de algo personalizado?</div>
-          <div class="plans-bottom-sub">Fale com a gente e montamos um plano para sua operação.</div>
-          <a class="btn btn-dark btn-sm" href="../index.html#contact">Entrar em contato</a>
+    <!-- BLOCO: MÓDULOS -->
+    <div class="pricing-block pricing-block-mod reveal">
+      <div class="pricing-block-head">
+        <div>
+          <div class="pill-label pill-label-soft">MÓDULOS</div>
+          <h3 class="pricing-h3">Planos secundários</h3>
+          <p class="pricing-sub">Para quem quer contratar só uma parte específica (Finanças ou Comercial).</p>
+        </div>
+      </div>
+
+      <div class="plans-grid plans-grid-mod">
+
+        <!-- FINANÇAS -->
+        <article class="planx-card card-premium is-secondary">
+          <div class="card-glow" aria-hidden="true"></div>
+
+          <div class="planx-head">
+            <div>
+              <div class="planx-name">Finanças <span class="planx-pill">Módulo</span></div>
+              <div class="planx-slug">financas</div>
+            </div>
+            <span class="planx-spark spark-anim" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 2l1.2 5.2L18 8.4l-4.8 1.2L12 15l-1.2-5.4L6 8.4l4.8-1.2L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </div>
+
+          <div class="planx-price">
+            <span class="planx-price-main" data-price="monthly">R$ 14,90</span>
+            <span class="planx-price-main" data-price="annual">R$ 129,00</span>
+            <span class="planx-per" data-price="monthly">/mês</span>
+            <span class="planx-per" data-price="annual">/ano</span>
+          </div>
+          <div class="planx-billing">
+            <span data-price="monthly">Cobrança recorrente mensal</span>
+            <span data-price="annual">Pagamento anual (1x)</span>
+          </div>
+
+          <div class="planx-divider"></div>
+
+          <div class="planx-sec">Para quem é</div>
+          <ul class="planx-bullets">
+            <li>Controle de entradas/saídas</li>
+            <li>Visão financeira do negócio</li>
+            <li>Organização por categorias</li>
+          </ul>
+
+          <a class="btn btn-primary w-100 planx-btn" href="../index.html#contact">Assinar</a>
+          <div class="planx-note">Ideal para quem quer só o módulo financeiro.</div>
+        </article>
+
+        <!-- COMERCIAL -->
+        <article class="planx-card card-premium is-secondary">
+          <div class="card-glow" aria-hidden="true"></div>
+
+          <div class="planx-head">
+            <div>
+              <div class="planx-name">Comercial <span class="planx-pill">Módulo</span></div>
+              <div class="planx-slug">comercial</div>
+            </div>
+            <span class="planx-spark spark-anim" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 2l1.2 5.2L18 8.4l-4.8 1.2L12 15l-1.2-5.4L6 8.4l4.8-1.2L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </div>
+
+          <div class="planx-price">
+            <span class="planx-price-main" data-price="monthly">R$ 19,90</span>
+            <span class="planx-price-main" data-price="annual">R$ 179,00</span>
+            <span class="planx-per" data-price="monthly">/mês</span>
+            <span class="planx-per" data-price="annual">/ano</span>
+          </div>
+          <div class="planx-billing">
+            <span data-price="monthly">Cobrança recorrente mensal</span>
+            <span data-price="annual">Pagamento anual (1x)</span>
+          </div>
+
+          <div class="planx-divider"></div>
+
+          <div class="planx-sec">Para quem é</div>
+          <ul class="planx-bullets">
+            <li>Propostas e rotina comercial</li>
+            <li>Organização de clientes</li>
+            <li>Fluxo de atendimento e follow-up</li>
+          </ul>
+
+          <a class="btn btn-primary w-100 planx-btn" href="../index.html#contact">Assinar</a>
+          <div class="planx-note">Ideal para organizar vendas e propostas.</div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="plans-bottom reveal">
+      <div class="plans-bottom-card">
+        <div class="plans-bottom-title">Precisa de algo personalizado?</div>
+        <div class="plans-bottom-sub">Fale com a gente e montamos um plano para sua operação.</div>
+        <a class="btn btn-dark btn-sm" href="../index.html#contact">Entrar em contato</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FAQ (Planos) -->
+  <section class="section section-soft" id="faq-planos">
+    <div class="container">
+      <div class="section-head centered reveal">
+        <div class="pill-label">PERGUNTAS FREQUENTES</div>
+        <h2 class="h2">Dúvidas sobre planos</h2>
+        <p class="sub centered">Respostas rápidas sobre cobrança, migração e módulos.</p>
+      </div>
+
+      <div class="faq-grid reveal" data-accordion="faq">
+        <details class="faq-item">
+          <summary class="faq-q">Como funciona a cobrança?
+            <span class="faq-ic" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-a">
+            No <strong>mensal</strong> a cobrança é recorrente. No <strong>anual</strong> você paga <strong>1x</strong> e mantém o acesso por 12 meses.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Posso cancelar quando quiser?
+            <span class="faq-ic" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-a">
+            Sim. Você pode cancelar a qualquer momento e o acesso permanece até o fim do período já pago.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Qual a diferença dos módulos (Finanças/Comercial) pros planos principais?
+            <span class="faq-ic" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-a">
+            Os módulos são para necessidades específicas. Os planos <strong>Starter/Pro/Business</strong> são completos e combinam recursos de gestão, rotina, agenda e operação.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Posso migrar de plano depois?
+            <span class="faq-ic" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-a">
+            Sim. Você pode mudar de plano quando quiser, sem perder seus dados.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">O anual tem desconto?
+            <span class="faq-ic" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-a">
+            O anual costuma sair mais barato no total porque é pagamento único. O valor aparece ao alternar para <strong>Anual</strong>.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Posso começar pelo módulo e depois ir pro Pro/Business?
+            <span class="faq-ic" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-a">
+            Sim. Você pode começar por um módulo e depois evoluir para um plano completo quando precisar.
+          </div>
+        </details>
+      </div>
+
+      <div class="faq-cta reveal">
+        <div class="faq-cta-card">
+          <div>
+            <div class="faq-cta-title">Quer ajuda pra escolher?</div>
+            <div class="faq-cta-sub">A gente te orienta no plano ideal pro seu caso.</div>
+          </div>
+          <a class="btn btn-dark" href="../index.html#contact">Falar com vendas</a>
         </div>
       </div>
     </div>
@@ -286,7 +474,7 @@
 
             <div class="footer-col">
               <div class="footer-h">INFORMAÇÕES</div>
-              <a href="../index.html#faq">Perguntas frequentes</a>
+              <a href="#faq-planos">Perguntas frequentes</a>
               <a href="#">Privacidade</a>
               <a href="#">Termos de uso</a>
               <a href="#">404</a>
@@ -298,7 +486,8 @@
 
         <div class="footer-bottom">
           <div>© 2025 Caxio Flow. Todos os direitos reservados.</div>
-          <div>Desenvolvido por <strong>Murilo Lodi</strong></div>
+          <div>Desenvolvido por <a href="http://lodservices.com.br" target="_blank"
+            rel="noopener noreferrer"><strong>LodServices</strong></a></div>
         </div>
       </footer>
     </div>
